@@ -1,0 +1,79 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 5px 0px;
+  margin-top: -18px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+#friends-display-link .fa-chevron-right {
+  margin: 10px;
+}
+
+.friends-screen {
+  padding: 0px 20px;
+  margin-top: -5px;
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__friends {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__friends-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  height: 105vh;
+  width: 97vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  animation: hideSplashScreen 0.7s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+#splash-screen img {
+  width: 350px;
+  height: 350px;
+}
