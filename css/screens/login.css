@@ -20,13 +20,13 @@
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: #aaba78;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: #9fad72;
   cursor: pointer;
-  margin: 38px 0px;
+  margin: 35px 0px -15px 0px;
   padding: 20px 0px;
   border-radius: 5px;
 }
@@ -35,5 +35,16 @@
   text-align: center;
   text-decoration: none;
   color: inherit;
-  margin: -15px;
+  margin-top: 35px;
+}
+
+.welcome-header__img {
+  padding: 37px 0px;
+  height: 30vh;
+  width: 93vw;
+  margin-top: 20px;
+  margin-bottom: -90px;
+}
+.welcome-header__title {
+  color: #737c53;
 }

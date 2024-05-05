@@ -5,7 +5,7 @@
   padding: 5px 0px;
   margin-top: -18px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #friends-display-link i {
@@ -45,7 +45,6 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -63,7 +62,7 @@
   background-color: rgb(255, 255, 255);
   position: absolute;
   height: 105vh;
-  width: 97vw;
+  width: 95vw;
   top: 0;
   display: flex;
   justify-content: center;

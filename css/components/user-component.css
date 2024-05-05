@@ -1,33 +1,71 @@
-.user-component {
+.user-component,
+.user-component__recommended {
   justify-content: space-between;
   margin-bottom: 15px;
 }
+
+.friends-screen .user-component:hover,
+.chat-screen .user-component:hover {
+  box-shadow: 2px 2px 15px rgba(201, 203, 203, 0.7);
+  padding: 0px 17px;
+  border-radius: 35px;
+  cursor: pointer;
+  transform: translateX(-0.25rem);
+  transition: transform 0.1s ease-in-out;
+}
+
+.friends-screen .user-component:not(:hover) {
+  transform: trnaslateX(0);
+  transition: transform 0.1s ease-in-out;
+}
+
 .user-component,
 .user-component__column:first-child {
   display: flex;
-
   align-items: center;
 }
 
 .user-component__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 30px;
-  margin-right: 20px;
+  border-radius: 35px;
+  margin-right: 15px;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
-.user-component__title {
-  font-weight: 600;
-  font-size: 20px;
+.user-component__avatar--find {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
+.user-component__text {
+  font-size: 18px;
+}
+.user-component__text--2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.fa-user-plus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.fa-user-plus:hover {
+  color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
 .user-component__music {
   color: var(--grey);
   background-color: white;
-  border: 1.5px solid #00ce38;
-  padding: 10px;
+  border: 1.2px solid #00ce38;
+  padding: 9px;
   border-radius: 25px;
   display: flex;
   justify-content: flex-end;
@@ -43,11 +81,11 @@
 }
 
 .user-component__music-name {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .user-component__subtitle {
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -64,31 +102,31 @@
 .user-component__avatar--sc {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .user-component__avatar--3th {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .user-component__avatar--4th {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .user-component__avatar--5th {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .user-component__avatar--6th {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .user-component__title--not-bold {
@@ -104,6 +142,5 @@
 
 .user-component__time {
   margin-bottom: 10px;
-
   display: block;
 }

@@ -4,6 +4,13 @@
   margin-top: 0px;
   padding-bottom: 25px;
 }
+.icon-row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  width: 47%;
+  margin-left: -3px;
+}
 
 .icon-row__icon {
   display: flex;
@@ -13,8 +20,12 @@
   color: #9fad72;
 }
 
+.icon-row__icon:hover {
+  color: #6e7652;
+}
+
 .icon-row__icon i {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .icon-row__icon span {

@@ -39,4 +39,59 @@
 
 .screen-header__icons .fa-gear:hover {
   animation: rotategear 1s linear infinite;
+  color: grey;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: shake 0.3s;
+}
+
+@keyframes rainbowLink {
+  0% {
+    color: #ff2a2a;
+  }
+  15% {
+    color: #ff7a2a;
+  }
+  30% {
+    color: #ffc52a;
+  }
+  45% {
+    color: #57ab4cab;
+  }
+  60% {
+    color: #2a89ff;
+  }
+  75% {
+    color: #202082;
+  }
+  90% {
+    color: #6b2aff;
+  }
+  100% {
+    color: #e82aff;
+  }
+}
+
+.screen-header__icons .fa-magnifying-glass:hover,
+.screen-header__icons .fa-magnifying-glass:focus {
+  animation: rainbowLink 2s infinite;
 }
